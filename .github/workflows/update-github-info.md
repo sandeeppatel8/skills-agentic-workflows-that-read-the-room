@@ -13,6 +13,7 @@ network:
   allowed:
     - github.blog
     - github.com
+    - awesome-copilot.github.com
 safe-outputs:
   create-pull-request:
     title-prefix: "[Mona review] "
@@ -24,13 +25,14 @@ safe-outputs:
 
 Read `notes/mona-notes.md` and the current `site/content/github-info.md` before researching or editing. Follow Mona's notes for editorial tone and scope.
 
-Use the `web-fetch` tool to read both official sources:
+Use the `web-fetch` tool to read all three sources:
 
 - https://github.blog/latest/
 - https://github.blog/changelog/
+- https://awesome-copilot.github.com/workflows/
 
-Identify recent items that can give developers practical GitHub guidance or meaningfully update the website's existing themes. Verify each summary against its source page; do not infer details from a headline, invent announcements, or include unsourced claims. Keep summaries short and practical, and link each item to its official source. Preserve relevant existing content and avoid duplicate entries.
+Identify recent news and useful Awesome Copilot workflows that can give developers practical GitHub guidance or meaningfully update the website's existing themes. Verify each summary against its source page; do not infer details from a headline, invent announcements, or include unsourced claims. Keep summaries short and practical, and link each item to its source. Preserve relevant existing content and avoid duplicate entries.
 
-Edit only `site/content/github-info.md`. Do not change the notes, workflow, site code, or other files. If neither source supports a useful update, make no changes and do not open an empty pull request.
+Edit only `site/content/github-info.md`. Do not change the notes, workflow, site code, or other files. If none of the sources support a useful update, make no changes and do not open an empty pull request.
 
 When the content changes, use the `create-pull-request` safe output to open one draft pull request against `main` for Mona to review. Use a clear summary that mentions the source pages and the practical updates; do not write directly to `main` or use any other write mechanism.
